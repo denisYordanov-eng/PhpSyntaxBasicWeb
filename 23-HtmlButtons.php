@@ -7,7 +7,7 @@
 
 </head>
 <body>
-<form method="get">
+<form>
     N: <input type="text" name="num" />
     <input type="submit" />
 </form>
@@ -15,7 +15,7 @@
 if (isset($_GET['num'])) {
     $num = intval($_GET['num']);
     for($i =1; $i <= $num; $i++) {
-        echo "<button>$i</button>\n";
+        echo "<button>$i</button><br>";
     }
 }
 ?>
